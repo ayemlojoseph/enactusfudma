@@ -1,0 +1,76 @@
+{% extends 'base.html' %} {% load static %}{% block content %}
+
+<div class="joinUs" >
+    <div class="joinUsAboutEnactus">
+        <div class="whatIsEnactus" >
+            <h2 class="whatIsEnactusWelcomeMessage">Welcome to Enactus Federal University Dutsinma</h2>
+            <h4> Are you a student of Federal University Dutsinma and want to be part of us?</h4>
+            <h4>What is Enactus?</h4>
+            <h4>
+                <span class="colorPrimary">En</span>treprenural:
+                <span class="">igniting business innovation with integrity and passion</span>
+            </h4>
+            <h4 class="colorWhite">
+                <span class="whatisEnactusac">Act</span>ion:
+                <span class="">the experience of social impact that sparks social enterprise</span>
+            </h4>
+            <h4 class="whatisEnactusus">Us:
+                <span class="">student, academic and business leaders collaborating to create a better world</span>
+            </h4>
+            <p>
+                Enactus is a non profit organization which is aimed at dicovery the
+                numerious problems faced by our community and finding sustainable
+                solution to those problems using entreprenural action
+            </p>
+            <h4>We believe in impacting Humanity through social Enterprise</h4>
+            <h4>Join us in taking action...</h4>
+            <h4>We are Enactus FUDMA!!!</h4>
+            <h4> Together, we can change our community, our country Nigeria and the world at large</h4>
+        </div>
+        <h3 class="joinEnactusFormHeadingMessage">Fill the form below to join Enactus FUDMA</h3>
+        <div class="joinEnactus">
+            <div class="joinEnactusForm">
+                <form action="#" method="POST" class="formJoin">
+                    {% csrf_token %}
+                    <div class="formJoinGroup">
+                        <div class="formJoinGroupOne">
+                            <input type="text" name="fullname" autocomplete="off" class="formJoinInput " id="fullname" placeholder="Enter Fullname"/>
+                            <label for="fullname" class="formJoinLabel">Enter Fullname</label>
+                            <input type="text" name="matricnumber" autocomplete="off" class="formJoinInput "id="matricnumber" placeholder="Enter Matric Number"/>
+                            <label for="matricnumber" class="formJoinLabel">Enter Matric Number</label>
+                            <input type="text" name="department" autocomplete="off" class="formJoinInput " id="department" placeholder="Enter Department"/>
+                            <label for="department" class="formJoinLabel"> Enter Department</label>
+                        </div>
+                        <div class="formJoinGroupTwo">
+                            <input type="text" class="formJoinInput" autocomplete="off"required="required" name="phonenumber" id="phonenumber" placeholder="Enter Phone Number"/>
+                            <label for="email" class="formJoinLabel">Enter Phone Number</label>
+                            <input type="email" class="formJoinInput"autocomplete="off" required="required" name="email" id="email"placeholder="Enter Email"/>
+                            <label for="email" class="formJoinLabel">Enter Email</label>
+                            <input type="submit" class=" btnjoinus btnPrimary" value="join " name="submit"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+          <h4 class="joinEnactusFormSubmitMessage">
+            Note: you will be contacted upon submittion of this form.
+          </h4>
+      </div> 
+    </div>
+    <div class="joinUsGallery">
+        <h2 class="joinUsGalleryHeading">Enactus FUDMA Photo Gallery</h2>
+        <div class="joinUsGalleryImageContainer">
+            <img src="{% static 'images/gal1.jpg'%}" alt="enactus FUDMA image" class="joinUsGalleryImageContainerImage"/>
+            <img src="{% static 'images/gal2.jpg'%}" alt="enactus FUDMA image" class="joinUsGalleryImageContainerImage"/>
+            <img src="{% static 'images/gal3.JPG'%}" alt="enactus FUDMA image" class="joinUsGalleryImageContainerImage"/>
+            <img src="{% static 'images/gal4.JPG'%}" alt="enactus FUDMA image" class="joinUsGalleryImageContainerImage"/>
+            <img src="{% static 'images/gal5.JPG'%}" alt="enactus FUDMA image" class="joinUsGalleryImageContainerImage"/>
+            <img src="{% static 'images/gal6.jpg'%}" alt="enactus FUDMA image" class="joinUsGalleryImageContainerImage"/>
+        </div>
+  </div>
+</div>
+
+
+{% endblock content %}
+
+
+  

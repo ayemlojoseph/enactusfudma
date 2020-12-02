@@ -1,0 +1,20 @@
+@import "base/base";
+@import "base/typographies";
+
+@import "layouts/header";
+@import "layouts/footer";
+
+@import "componenets/buttons";
+@import "componenets/form";
+@import "componenets/slides";
+@import "componenets/card";
+ 
+@import "abstracts/variables";
+@import "abstracts/utilities";
+@import "abstracts/animations";
+
+@import "pages/home";
+@import "pages/alumni";
+@import "pages/student";
+@import "pages/joinus";
+@import "pages/sdgs";

@@ -1,0 +1,319 @@
+/* Register Form*/
+.registerContainer {
+  padding: 2rem 0 3.2rem 0;
+  background-color: black;
+  
+  &Form {
+    background-image: linear-gradient(
+        105deg,
+        rgba(white, 0.7) 0%,
+        rgba(white, 0.7) 50%,
+        rgba(255, 187, 0, 0.356) 50%
+      ),
+      url("../images/enact12.JPG");
+
+    background-size: cover;
+    height: 37rem;
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+}
+
+
+.registerForm {
+  &Group{
+    width: 50%;
+    margin-left: 2rem;
+  }
+  &Input:not(:last-child) {
+    margin-bottom: -2rem;
+  }
+  &Input {
+    font-size: 1.2rem;
+    font-family: inherit;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    background-color: rgba(white, 0.8);
+    border: none;
+    margin-top: 1rem;
+    border-bottom: 3px solid rgba(0, 128, 0, 0);
+    width: 80%;
+    display: block;
+    color: black;
+    transition: all 0.1s;
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid green;
+      box-shadow: 0 1rem 6rem rgba(black, 0.4);
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid red;
+    }
+  }
+
+  &Label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2.2rem;
+    margin-top: 2rem;
+    display: block;
+    transition: all 0.1s;
+  }
+
+  &Input:placeholder-shown + &Label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4.5rem);
+  }
+}
+
+/* Login form*/
+.loginContainer {
+  padding: 3rem 0 3rem 0;
+
+    &Form {
+        background-image: linear-gradient(
+        105deg,
+        rgba(white, 0.7) 0%,
+        rgba(white, 0.7) 50%,
+        rgba(255, 187, 0, 0.404) 50%
+        ),
+        url("../images/enact1.jpg");
+
+        background-size: cover;
+        height: 35rem;
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+}
+
+.loginForm {
+
+  &Group{
+    width: 50%;
+    margin-left: 2rem;
+  }
+  &Input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 3px;
+    background-color: rgba(white, 0.8);
+    border: none;
+    margin-top: 2rem;
+    border-bottom: 3px solid rgba(0, 128, 0, 0);
+    width: 80%;
+    display: block;
+    color: black;
+    transition: all 0.1s;
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid green;
+      box-shadow: 0 1rem 6rem rgba(black, 0.4);
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid red;
+    }
+  }
+
+  &Label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.1s;
+  }
+
+  &Input:placeholder-shown + &Label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4.5rem);
+  }
+}
+
+
+
+/* Join Us Form*/
+.joinEnactus {
+  background-image: linear-gradient(
+      105deg,
+      rgba(white, 0.7) 0%,
+      rgba(white, 0.7) 50%,
+      rgba(white, 0.7) 50%
+    ),
+    url("../images/enact3.jpg");
+
+  background-size: cover;
+  background-position: center;
+  height: 25rem;
+  max-width: 100rem;
+  margin: 0 auto;
+
+  &Form {
+    width: 100%;
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
+}
+
+.formJoin {
+
+  &Group {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  &Input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 3px;
+    background-color: rgba(white, 0.8);
+    border: none;
+    margin-top: 0.3rem;
+    border-bottom: 3px solid rgba(0, 128, 0, 0);
+    width: 90%;
+    display: block;
+    color: black;
+    transition: all 0.1s;
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid green;
+      box-shadow: 0 1rem 6rem rgba(black, 0.4);
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid red;
+    }
+  }
+
+  &Label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.1s;
+  }
+
+  &Input:placeholder-shown + &Label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4.5rem);
+  }
+}
+
+
+
+/* Alumni Form*/
+.enactusAlumni {
+  background-image: linear-gradient(
+      105deg,
+      rgba(white, 0.7) 0%,
+      rgba(white, 0.7) 50%,
+      rgba(white, 0.7) 50%
+    ),
+    url("../images/enact3.jpg");
+
+  background-size: cover;
+  background-position: center;
+  height: 25rem;
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+
+  &Form {
+    width: 100%;
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
+}
+
+.formAlumni {
+
+  &Group {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  &Input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 3px;
+    background-color: rgba(white, 0.8);
+    border: none;
+    margin-top: 0.3rem;
+    border-bottom: 3px solid rgba(0, 128, 0, 0);
+    width: 90%;
+    display: block;
+    color: black;
+    transition: all 0.1s;
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid green;
+      box-shadow: 0 1rem 6rem rgba(black, 0.4);
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid red;
+    }
+  }
+
+  &Label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.1s;
+  }
+
+  &Input:placeholder-shown + &Label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4.5rem);
+  }
+}
+
+
+
+//  Media Queries 
+// Tablet landscape
+@media screen and (max-width: 1200px){
+    
+    // Login Form
+    .loginContainer {
+        &Form {            
+            height: 30rem;
+            max-width: 50rem;
+        }
+    }
+}
+//  Tablet portrait  
+ @media screen and (max-width: 900px){
+     // Login Form
+     .loginContainer {
+      &Form {            
+          height: 30rem;
+          width: 100%;
+      }
+  }
+} 
+//  Phone 
+ @media screen and (max-width: 600px){
+  .loginContainer {
+    &Form {            
+        height: 30rem;
+        width: 100%;
+    }
+}
+
+} 

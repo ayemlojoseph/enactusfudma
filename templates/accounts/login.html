@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="loginContainer"> 
+    <div class="loginContainerForm">
+        <form action="#" method="POST" class="loginForm">
+            {% csrf_token %}
+            <div class="loginFormHeadingContainer"><h2 class="loginFormHeading">Login Below</h2></div>
+            <div class="loginFormGroup"> 
+                <input type="email" class="loginFormInput" autocomplete="off" required="required" name="email" id="email" placeholder="Enter Email">     
+                <label for="email" class="loginFormLabel">Enter Email</label>                                                  
+            </div>
+            <div class="loginFormGroup">   
+                <input type="password" name="password" autocomplete="off" class="loginFormInput" id="password" placeholder="Enter Password" >
+                <label for="password" class="loginFormLabel"> Enter Password</label> 
+            </div>
+            <div class="loginFormMessageContainer">
+                {% for message in messages %}
+                <p>{{message}}</p>
+                {% endfor %}
+            </div>
+            <div class="loginFormLinksContainer">
+                <h4>Don't have an account?<a href="{% url 'register' %}">click to register</a></h4>
+                <h4>Not a member? <a href="{% url 'join' %}">click to join</a></h4>
+                <h4>Forget password? <a href="{% url 'password_reset' %}">click here</a></h4>
+            </div>
+            <input type="submit" class=" btnLoginForm btnPrimary"  value="Login" name="submit">
+        </form>
+    </div>
+</div>
+
+<!-- Exlcuding footer -->
+{% block footer %} 
+{% endblock footer %}
+
+{% endblock content %}

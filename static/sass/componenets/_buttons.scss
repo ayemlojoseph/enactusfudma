@@ -1,0 +1,48 @@
+
+.btnPrimary{
+    text-transform: uppercase;
+    background-color: var(--colorPrimary);
+    text-decoration: none;
+    color: black;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    transition: all 1s ease-in-out;  
+    font-family: 'Roboto';  
+
+    &:hover{
+        background-color: black;
+        color: var(--colorPrimary);
+        transform: translateY(8px);
+    }
+   
+}
+.btnEnactusFudmaHome{
+    text-align: center;
+    margin-top: 2rem;
+
+    &Link{        
+        padding: 1rem 1.2rem 1rem 1.2rem;
+    }
+}
+.btnRegisterForm{
+    padding: 1rem 1.2rem 1rem 1.2rem;
+    margin-left: 20rem;       
+}
+.btnLoginForm{
+    padding: 1rem 1.2rem 1rem 1.2rem;
+    margin-left: 20rem;    
+}
+.btnHomeEnactusNigeriaLink{
+    padding: 0.6rem 5rem 0.6rem 5rem;    
+}
+.btnHomeDonateLink{
+    padding: 0.6rem 6rem 0.6rem 6rem;  
+}
+.btnjoinus {
+    padding: 1rem 1.2rem 1rem 1.2rem;       
+    
+}
+.btnAlumni {
+    padding: 1rem 1.2rem 1rem 1.2rem;       
+    
+}

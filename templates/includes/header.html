@@ -1,0 +1,37 @@
+{% load static %}
+<header class="headerContainer" >   
+    <nav class="nav">      
+        <a href="{% url 'home' %}">
+            <img src="{% static 'images/enactuslogo.png' %}" alt="enactus logo" class="enactusLogo"/>             
+        </a>        
+        <ul class="navList">
+            {% if user.is_authenticated %}
+            <li class="navListItem "><a href="{% url 'home' %}"  class="navListLink">Home</a></li>
+            <li class="navListItem "><a href="{% url 'alumni' %}" class="navListLink">Alumni</a></li>
+            <li class="navListItem "><a href="{% url 'logout' %}" class="navListLink">Logout</a></li>
+            <li class="navListItem "><a href="{% url 'profile' %}" class="navListLink">Profile</a></li>
+            <li class="navListItem "><a href="#" class="navListLink">Enactus-Quiz</a></li>
+            <li class="navListItem "><a href="{% url 'project' %}" class="navListLink">Our Projects</a></li>
+
+
+            {% else %}
+            <li class="navListItem "><a href="{% url 'home' %}" class="navListLink">Home</a></li>
+            <li class="navListItem "><a href="{% url 'signin' %}"  class="navListLink">Login</a></li>
+            <li class="navListItem "><a href="{% url 'register' %}" class="navListLink">Register</a></li>
+            <li class="navListItem "><a href="{% url 'activestudent' %}" class="navListLink">Student</a></li>
+            <li class="navListItem "><a href="{% url 'alumni' %}" class="navListLink">Alumni</a></li>
+            <li class="navListItem "><a href="{% url 'project' %}" class="navListLink">Our Projects</a></li>
+            {% endif %}
+        </ul>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="headerContainerSecondary">      
+        #EnactusFUDMA: Impacting Humanity through Social Enterprise.
+        <a href="{% url 'join' %}" class="headerContainerSecondaryJoinUsLink">Join Us</a>      
+    </div>
+    <script src="{% static 'js/navBar.js' %}"></script>
+</header>

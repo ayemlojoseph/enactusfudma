@@ -1,0 +1,68 @@
+{% extends 'base.html'%} {% load static %} {% block content %}
+
+<div>
+    <div class="enactusFudmaAlumni">
+        <div class="enactusFudmaAlumniHeadingContainer">
+            <h2 class="enactusFudmaAlumniHeadingContainerHeading">Welcome to the <br/>Enactus Fudma <br/>Alumni Network</h2>  
+            <i class="fas fa-arrow-alt-circle-down enactusFudmaAlumniHeadingContainerIcon"></i>
+        </div>   
+    </div>
+
+    <h1>Alumni Profiles</h1>
+    <div class="card">
+    {% for alumni in alumniProfile %}
+        <div class="cardContainer">
+            <div class="cardBody">
+                <div class="cardBodyImageTextContainer">
+                    <div class="cardBodyImageTextContainerImageContainer"><img class="cardBodyImageTextContainerImageContainerImage" src="{{ alumni.profilePicture.url }}"/></div>                    
+
+                    <div class="cardBodyImageTextContainerText">
+                        <h1 class="cardBodyImageTextContainerTextQuoteHeading" >Favourite Quote</h1>
+                        <p class="cardBodyImageTextContainerTextQuoteContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. P ad mollitia reiciendis libero, alias vero accusamus tenetur, assumenda ex temporibus.</p>
+                        
+                        <h3 class="cardBodyImageTextContainerTextStudentDetails">
+                            Name: <span>{{ alumni.first_name}}</span> {{ alumni.last_name}}<span></span>
+                        </h3>
+                        <h3 class="cardBodyImageTextContainerTextStudentDetails">Department: <span>Sociology</span></h3>
+                        <h3 class="cardBodyImageTextContainerTextStudentDetails">Graduation Year: <span>2019/2020</span></h3>
+                    </div>
+                </div>         
+                <img src="{% static 'images/enactuslogo.png' %}" alt="enactus logo" class="cardEnactusLogo"/>            
+            </div> 
+        </div>
+    {% endfor %}
+    </div>
+    <div>
+        <h1  class="enactusAlumniFormHeadingMessage">Stay Connected with us as an alumni</h1>
+        <p class="enactusAlumniFormHeadingMessage">We love to keep in touch with past Enactus members so we have created this form in case any alumni wish to assist Enactus Fudma.</p>
+        <h3 class="enactusAlumniFormHeadingMessage">Please Fill the form below </h3>
+        <div class="enactusAlumni">
+            <div class="enactusAlumniForm">
+                <form action="#" method="POST" class="formAlumni">
+                    {% csrf_token %}
+                    <div class="formAlumniGroup">
+                        <div class="formAlumniGroupOne">
+                            <input type="text" name="fullname" autocomplete="off" class="formAlumniInput " id="fullname" placeholder="Enter Fullname"/>
+                            <label for="fullname" class="formAlumniLabel">Enter Fullname</label>
+                            <input type="text" name="matricnumber" autocomplete="off" class="formAlumniInput "id="matricnumber" placeholder="Enter Matric Number"/>
+                            <label for="matricnumber" class="formAlumniLabel">Enter Matric Number</label>
+                            <input type="text" name="department" autocomplete="off" class="formAlumniInput " id="department" placeholder="Enter Department"/>
+                            <label for="department" class="formAlumniLabel"> Enter Department</label>
+                        </div>
+                        <div class="formAlumniGroupTwo">
+                            <input type="text" class="formAlumniInput" autocomplete="off"required="required" name="phonenumber" id="phonenumber" placeholder="Enter Phone Number"/>
+                            <label for="email" class="formAlumniLabel">Enter Phone Number</label>
+                            <input type="email" class="formAlumniInput"autocomplete="off" required="required" name="email" id="email"placeholder="Enter Email"/>
+                            <label for="email" class="formAlumniLabel">Enter Email</label>
+                            <input type="submit" class=" btnAlumni btnPrimary" value="submit " name="submit"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+          <h4 class="enactusAlumniFormSubmitMessage">
+            Note: you will be contacted upon submittion of this form.
+          </h4>
+      </div> 
+    </div>
+</div>
+  {% endblock content %}

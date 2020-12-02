@@ -1,0 +1,95 @@
+.unSdgImageContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 2rem 4rem 2rem 4rem;
+    height: 10rem;
+    
+    &IconsLeft{
+    height: 10rem;
+    margin-left: 4rem;
+
+    }
+    &IconsRight{
+    height: 10rem;
+    margin-left: 20rem;
+    
+        
+
+    }
+}
+
+.unSdg{
+    margin: 0 6rem 0 6rem;
+
+    &Heading{
+        margin-left: 4rem;
+    }
+
+
+    &EmblemContainer{
+        text-align: center;
+
+        &Icon{
+            height: 10rem;
+            width: 50rem;
+            margin-left: 4rem;
+        }
+    }
+
+    &Contents{
+        margin: 0 4rem 0 4rem;
+        text-align: justify;
+    }
+
+    &ImageContainer1{
+        background-color: #E5243B;        
+    }
+    &ImageContainer2{
+        background-color: #DDA63A;
+    }
+    &ImageContainer3{
+        background-color: #4C9F38;
+    }
+    &ImageContainer4{
+        background-color: #C5192D;
+    }
+    &ImageContainer5{
+        background-color: #FF3A21;
+    }
+    &ImageContainer6{
+        background-color: #26BDE2;
+    }
+    &ImageContainer7{
+        background-color: #FCC30B;
+    }
+    &ImageContainer8{
+        background-color: #A21942;
+    }
+    &ImageContainer9{
+        background-color: #FD6925;
+    }
+    &ImageContainer10{
+        background-color: #DD1367;
+    }
+    &ImageContainer11{
+        background-color: #FD9D24;
+    }
+    &ImageContainer12{
+        background-color: #BF8B2E;
+    }
+    &ImageContainer13{
+        background-color: #3F7E44;
+    }
+    &ImageContainer14{
+        background-color: #0A97D9;
+    }
+    &ImageContainer15{
+        background-color: #56C02B;
+    }
+    &ImageContainer16{
+        background-color: #00689D;
+    }
+    &ImageContainer17{
+        background-color: #19486A;
+    }
+}

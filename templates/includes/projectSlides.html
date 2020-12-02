@@ -1,0 +1,50 @@
+{% load static %}
+    <section class="home">
+      <div class="slider">
+        <div
+          class="slide active"style="background-image: url(' {% static 'images/childedu.jpeg' %}')">
+        
+          <div class="container" >
+            <div class="caption">
+              <h1>Project PACE</h1>         
+              <br/>
+              <a href="#" class="link"> See More </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide "style="background-image: url(' {% static 'images/almajiri4.jpg' %}')">
+          <div class="container">
+            <div class="caption">
+              <h1>Project HOFAL</h1>
+              <br/>
+              <a href="#" class="link"> See More </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide "style="background-image: url(' {% static 'images/skills.jpg' %}')">
+          <div class="container">
+            <div class="caption">
+              <h1>Project HOFAL Extended</h1>
+              <br/>              
+              <a href="#" class="link"> See More </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--controls-->
+      <div class="controls">
+        <div class="prev"><</div>
+        <div class="next">></div>
+      </div>
+
+      <!--indicators-->
+
+      <div class="indicator"></div>
+    </section>
+  </body>
+  <script src="{% static 'js/projectSlide.js' %}"></script>
+ 
+</html>

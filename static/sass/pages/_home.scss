@@ -1,0 +1,579 @@
+
+.enactusFudmaHome {
+    background-image:  linear-gradient(to right bottom, 
+                        rgba(163, 204, 157, 0.123), 
+                        rgba(18, 69, 10, 0.288)), 
+                        url(../images/enact12.JPG);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;    
+
+
+    &Header{
+        padding-top: 23rem;
+       
+        &Heading{
+            text-transform: uppercase;
+            text-align: center;
+            color: whitesmoke;
+            font-size: 1.5rem;
+            
+            &Mobile{
+                display: none;
+            }
+        }
+
+    }
+}
+
+
+.homeSdgContainer{
+    margin-top: 2rem;
+    color: black;
+    text-align: center;
+}
+.homeSdgHeading{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.homeSdgmarkIcon{
+    margin-bottom: 0.4rem;
+    height: 8rem;
+}
+.homeSdgEmblemIcon{
+    height: 6rem;
+    width: 50rem;
+}
+
+.homeSdgIconsContainer{
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+    margin: 0 auto;
+    max-width: 64rem;
+    margin-bottom: 0.4rem;
+
+
+    &Icons{
+        height: 10rem;
+        margin-bottom: 0.2rem;
+        transition: all 0.7s ease-in-out;
+        
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &:hover &Icons:not(:hover) {  
+        transform: scale(.92);  
+    }
+}
+
+.homeTakeActionContainer{
+    background-image:  linear-gradient(to right bottom, 
+    rgba(157, 197, 204, 0.856), 
+    rgba(10, 69, 49, 0.753)), 
+    url(../images/IMG_8268.JPG);
+    height: 95vh;
+    background-size: cover;
+    background-position: center;    
+    text-align: center;
+    padding-top: 2rem;
+    
+    &Heading{
+        text-transform: uppercase;
+        color: white;
+        font-weight: 700;
+        font-family: 'Roboto';
+        font-size: 3rem;
+        margin: 2rem 0 2rem 0;
+    }
+    
+}
+.homeTakeAction{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 0 2rem 0 2rem;
+
+
+    
+    &Content{
+
+        &Icons{
+            transition: all 0.3s ease-in-out;            
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        &Heading{
+            text-transform: uppercase;
+        }
+        &Message{
+            margin-bottom: 2rem;
+            color: white;
+            letter-spacing: 0.1rem;
+            font-size: 1.3rem;
+        }
+    }
+    
+}
+
+.homeTeamWorkAndWorkAloneContainer{
+    padding-top: 4rem;
+    color: black;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+}
+
+.homeWorkAloneContainer{
+    margin-left: 3rem;
+
+    &Heading{
+        text-transform: uppercase;
+        color: black;
+    }
+    &Image{
+        height: 20rem;
+    }
+    &EnactusHeading{
+        color: black;
+    }
+
+}
+.arrowDownMobileView{
+    color: transparent;
+}
+.homeTeamWorkContainer{
+    margin-left: 5rem;
+    &Image{
+        height: 27rem;
+    }
+}
+.homeArrowContainer{
+    &ArrowRight{
+        color: black;
+        font-size: 1rem;
+        width: 2rem;
+    }
+    &ArrowDown{
+        color: var(--colorPrimary);
+        font-size: 5rem;
+        width: 12rem;
+    }
+    &Image{
+        height: 14rem;
+        margin-bottom: 2rem;
+    }
+    &Heading{
+        margin-bottom: 3rem;
+    }
+}
+.enactusSloganHome{
+    margin-left: 2rem;
+
+    &Logo{
+        width: 15rem;
+    }
+
+    &Content{
+        margin-left: 13rem;
+    }
+}
+.homeConnectWithUS{
+    margin: 6rem 0 3rem 4rem;
+    overflow-x: hidden;
+
+    
+    &Container{
+        display: grid;
+        grid-template-columns: 60% 40%;
+
+        &FollowUsImage{
+            height: 30rem;
+    
+        }
+    
+        &ConnectImage{
+        height: 20rem;
+        margin-bottom: 4rem;
+    
+        }
+        
+        &SocialIcons{
+            font-size: 3rem;
+            margin-right: 1rem;
+            padding: 1rem;
+            color: var(--colorPrimary);
+            background-color: black;
+
+            &:hover{
+                color: black;
+                background-color: var(--colorPrimary);
+            }
+        }
+    }
+    &EnactusFudma{
+        color: black;
+        text-transform: uppercase;
+        letter-spacing: 0.4rem;
+        font-size: 2rem;
+        text-align: center;
+        font-family: 'Roboto' sans-serif;
+        margin-top: 1rem;
+        animation: moveInRight 7s;
+        animation-iteration-count: infinite;
+    }
+}
+
+//check it content from where
+.content{
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background-color: var(--colorPrimary);
+    color: black;
+}
+
+
+
+
+
+//  Media Queries 
+// Tablet landscape
+@media screen and (max-width: 1200px){
+    
+    .enactusFudmaHome {
+        &Header{       
+
+            &Heading{
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .homeSdgHeading{        
+        font-size: 3rem;
+    }
+    .homeSdgmarkIcon{
+        height: 6rem;
+    }
+    .homeSdgEmblemIcon{
+        height: 4rem;
+        width: 40rem;
+    }
+    .homeSdgIconsContainer{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        max-width: 42rem;
+    }
+    .homeTakeActionContainer{       
+        height: 100vh;
+        padding-top: 0.1rem;
+        
+        &Heading{            
+            font-size: 1.8rem;
+            margin: 1rem 0 0.7rem 0;
+        }        
+    }
+    .homeTakeAction{
+        display: block;
+
+        &ContentExplore{
+            margin-bottom: 2rem;
+        }
+        &Content{
+            
+            &Icons{
+                height: 6rem;
+            }
+            &Heading{
+                text-transform: uppercase;
+                font-size: 1.2rem;
+            }
+            &Message{
+                margin-bottom: 1rem;
+            }
+        }
+    }   
+    .homeTeamWorkAndWorkAloneContainer{
+        padding-top: 4rem;
+        color: black;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .homeWorkAloneContainer{
+        margin-left: 3rem;
+
+        &Heading{
+            text-transform: uppercase;
+            color: black;
+        }
+        &Image{
+            height: 20rem;
+        }
+        &EnactusHeading{
+            color: black;
+        }
+
+    }
+    .arrowRightDesktopView{
+        color: transparent;
+    }
+    .homeTeamWorkContainer{
+        margin-left: 5rem;
+
+        &Image{
+            height: 27rem;
+        }
+    }
+    .homeArrowContainer{
+        &ArrowRight{
+            color: black;
+            font-size: 1rem;
+            width: 2rem;
+        }
+        &ArrowDown{
+            color: var(--colorPrimary);
+            font-size: 5rem;
+            width: 12rem;
+        }
+        &Image{
+            height: 14rem;
+            margin-bottom: 2rem;
+        }
+        &Heading{
+            margin-bottom: 3rem;
+        }
+    }
+    .enactusSloganHome{
+        margin-left: 2rem;
+
+        &Logo{
+            width: 15rem;
+        }
+
+        &Content{
+            margin-left: 13rem;
+        }
+    }
+    .homeConnectWithUS{
+                
+        &Container{
+            display: grid;
+            grid-template-columns: 60% 40%; 
+
+            &FollowUsImage{
+                height: 23rem;        
+            }        
+            &ConnectImage{
+                height: 20rem;
+                margin-bottom: 4rem;        
+            }           
+            &SocialIcons{
+                font-size: 2rem;               
+            }
+        }
+        &EnactusFudma{            
+            letter-spacing: 0.2rem;
+        }
+    }
+}
+
+
+//  Tablet portrait  
+ @media screen and (max-width: 900px){
+    .homeTeamWorkAndWorkAloneContainer{
+        padding-top: 4rem;
+        color: black;
+        display: block;
+    }
+
+    .homeWorkAloneContainer{
+
+        &Heading{
+            text-transform: uppercase;
+            color: black;
+        }
+        &Image{
+            height: 20rem;
+        }
+        &EnactusHeading{
+            color: black;
+        }
+
+    }
+    .homeTeamWorkContainer{
+        margin-left: 3rem;
+        &Image{
+            height: 25rem;
+        }
+    }
+    .homeArrowContainer{
+        &ArrowRight{
+            color: black;
+            font-size: 1rem;
+            width: 2rem;
+        }
+        &ArrowDown{
+            color: var(--colorPrimary);
+            font-size: 5rem;
+            width: 12rem;
+        }
+        &Image{
+            height: 14rem;
+            margin-bottom: 2rem;
+        }
+        &Heading{
+            margin-bottom: 3rem;
+        }
+    }
+    .arrowRightDesktopView{
+        color: transparent;
+    }
+    .arrowDownMobileView{
+        color: var(--colorPrimary);
+    }
+    .homeConnectWithUS{
+        text-align: center;
+                
+        &Container{
+            display: block;
+
+            &FollowUsImage{
+                height: 23rem;        
+            }        
+            &ConnectImage{
+                height: 20rem;
+                margin-bottom: 0.1rem;       
+            }           
+            &SocialIcons{
+                font-size: 2rem;               
+            }
+        }
+        &EnactusFudma{            
+            display: none;
+        }
+    }
+} 
+
+
+//  Phone 
+ @media screen and (max-width: 600px){
+    .enactusFudmaHome {
+        background-image:  linear-gradient(
+            180deg, 
+          rgba(0, 0, 0, 0.966) 0%,
+            transparent 30%,
+          black 70%,
+          transparent 80%,
+           rgba(0, 0, 0, 0.973) 99%), 
+            url(../images/enact12.JPG);
+
+        height: 80vh;
+        background-position: right;        
+    
+        &Header{
+            padding-top: 23rem;
+           
+            &Heading{
+                text-transform: uppercase;
+                text-align: center;
+                color: whitesmoke;
+                font-size: 1.5rem;
+
+                &Main{
+                    display: none;
+                }
+                &Mobile{
+                    display: block;
+                }
+            }
+    
+        }
+    }   
+    .homeSdgHeading{        
+        font-size: 2rem;
+    }
+    .homeSdgmarkIcon{
+        height: 5rem;
+    }
+    .homeSdgEmblemIcon{
+        width: 30rem;
+    }
+    .homeSdgIconsContainer{
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        max-width: 33rem;
+        overflow: hidden;
+
+    }
+    .homeTakeAction{
+
+        &ContentExplore{
+            margin-bottom: 2rem;
+        }        
+        &Content{
+            
+            &Icons{
+                height: 5rem;
+            }
+            &Heading{
+                text-transform: uppercase;
+                font-size: 1.2rem;
+            }
+            &Message{
+                margin-bottom: 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    }
+    
+
+    .homeWorkAloneContainer{
+        
+        &Image{
+            height: 20rem;
+        }
+        &EnactusHeading{
+            color: black;
+        }
+
+    }
+    .homeTeamWorkContainer{
+        margin-left: 3rem;
+        &Image{
+            height: 25rem;
+        }
+    }
+    .homeArrowContainer{
+        &ArrowRight{
+            color: black;
+            font-size: 1rem;
+            width: 2rem;
+        }
+        &ArrowDown{
+            color: var(--colorPrimary);
+            font-size: 5rem;
+            width: 12rem;
+        }
+        &Image{
+            height: 14rem;
+            margin-bottom: 2rem;
+        }
+        &Heading{
+            margin-bottom: 3rem;
+        }
+    }
+   
+    .arrowDownMobileView{
+        color: transparent;
+    }
+    .homeConnectWithUS{                
+        &Container{
+            &FollowUsImage{
+                height: 18rem;        
+            }             
+        }
+        
+    }
+
+} 

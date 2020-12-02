@@ -1,0 +1,140 @@
+.card{
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    width: 100%; 
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+.cardContainer{
+    background-color:var(--colorPrimary);
+    width: 33rem;
+    height: 38rem;
+    box-shadow: 0 1rem 2rem black;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out; 
+    margin: 0 auto;
+    margin-bottom: 5rem;
+
+    
+    &:hover{
+        transform: scale(1.05);
+    }
+
+}
+
+.cardBody{
+    height: 95%;
+    width: 100%;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 1.5%, 99% 85%, 0 120%);
+    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); //cross plateform fix for some browsers
+
+
+    &ImageTextContainer{
+        height: 80%;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        margin-right: 1rem;
+
+        &ImageContainer{
+            overflow: hidden;
+            border-radius: 1rem;
+            margin-right: 1rem;
+
+            &Image{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        &Text{
+            height: 100%;
+            width: 100%;
+
+            &QuoteHeading{
+
+            }
+            &QuoteContent{
+
+            }
+            &StudentDetails{
+                font-size: 1rem;
+                margin: 1rem 0 0 0;
+                padding-bottom: 1rem;
+                &:not(:last-child) {
+                    border-bottom: 1px solid gray;
+                }
+            }
+        }
+    }
+}
+
+.cardEnactusLogo{
+    width: 7rem;
+    height: 3.6rem;
+    animation: moveInRight 6s;
+    animation-iteration-count: infinite;
+
+    
+
+}
+
+
+
+//  Media Queries 
+// Tablet landscape
+@media screen and (max-width: 1200px){
+    .card{
+        display: block;
+        width: 100%; 
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+    .cardContainer{
+        background-color:var(--colorPrimary);
+        width: 33rem;
+        height: 38rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+            
+    }
+}
+
+
+//  Tablet portrait  
+ @media screen and (max-width: 900px){
+    .card{
+        display: block;
+        width: 100%; 
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+    .cardContainer{
+        background-color:var(--colorPrimary);
+        width: 33rem;
+        height: 38rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+            
+    }
+} 
+
+
+//  Phone 
+ @media screen and (max-width: 600px){
+    .card{
+        display: block;
+        width: 100%; 
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+    .cardContainer{
+        background-color:var(--colorPrimary);
+        width: 28rem;
+        height: 30rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+            
+    }
+
+} 

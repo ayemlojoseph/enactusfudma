@@ -1,0 +1,53 @@
+.loginFormHeadingContainer{
+  padding-top: 3rem;
+  width: 50%;
+ }
+.loginFormHeading{
+  text-align: center;
+  text-transform: uppercase;
+}
+.loginFormMessageContainer{
+  color: red;
+  margin-left: 2rem;
+}
+.loginFormLinksContainer{
+  margin-left: 2rem;
+}
+.registerFormHeadingContainer{
+  padding-top: 2rem;
+  width: 50%;
+}
+.registerFormHeading{
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.registerFormLinksContainer{
+  margin-left: 2rem;
+}
+.registerFormMessageContainer{
+  color: red;
+  margin-left: 2rem;
+}
+
+.joinEnactusFormHeadingMessage{
+  text-align: center;
+  margin: 1rem 0 0.5rem 0;
+}
+.joinEnactusFormSubmitMessage{
+  margin-left: 2rem;
+}
+.enactusAlumniFormSubmitMessage{
+  margin-left: 2rem;
+}
+.enactusAlumniFormHeadingMessage{
+  text-align: center;
+  margin: 1rem 0 0.5rem 0;
+}
+.whatIsEnactus{
+    background-color: black;
+    color: white;
+    margin-top: 2rem;
+    &WelcomeMessage{
+    }
+}

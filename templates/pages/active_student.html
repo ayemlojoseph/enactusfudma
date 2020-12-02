@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div>
+    <div class="enactusFudmaStudent">
+        <div class="enactusFudmaStudentHeadingContainer">
+            <!-- <h2 class="enactusFudmaStudentHeadingContainerHeading">We all Win</h2>            -->
+        </div>    
+        <!-- <i class="fas fa-arrow-alt-circle-down enactusFudmaStudentIcon"></i> -->
+    </div>
+
+    <div class="card">
+    {% for student in activestudent %}
+        <div class="cardContainer">
+            <div class="cardBody">
+                <div class="cardBodyImageTextContainer">
+                    <div class="cardBodyImageTextContainerImageContainer"><img class="cardBodyImageTextContainerImageContainerImage" src="{{ student.profilePicture.url }}"/></div>                    
+                    <div class="cardBodyImageTextContainerText">
+                        <h1 class="cardBodyImageTextContainerTextQuoteHeading" >About</h1>
+                        <p class="cardBodyImageTextContainerTextQuoteContent">{{student.about}}</p>
+                    
+                        <h3 class="cardBodyImageTextContainerTextStudentDetails">
+                            Name: <span>{{ student.first_name}}</span> {{ student.last_name}}<span></span>
+                        </h3>
+                        <h3 class="cardBodyImageTextContainerTextStudentDetails">Department: <span>Sociology</span></h3>
+                        <h3 class="cardBodyImageTextContainerTextStudentDetails">Matric Num: <span>SOC/2019/12419</span></h3>
+                    </div>
+                </div>         
+                <img src="{% static 'images/enactuslogo.png' %}" alt="enactus logo" class="cardEnactusLogo"/>            
+            </div>              
+                    
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+{% endblock content %}

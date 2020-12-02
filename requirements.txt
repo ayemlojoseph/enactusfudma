@@ -1,0 +1,10 @@
+python-decouple==3.3
+django-heroku==0.3.1
+psycopg2==5.2.0
+dj-database-url==0.5.0
+django==3.0.6
+sqlparse==0.2.2
+pytz==202.0.1
+asgiref==3.2.7
+gunicorn==19.7.1
+whitenoise==5.2.0

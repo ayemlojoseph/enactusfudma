@@ -1,0 +1,128 @@
+{% extends 'base.html'%} {% block content %} {% load static %}
+<div>
+    <div class="enactusFudmaHome">
+        <div class="enactusFudmaHomeHeader">
+            <div class="enactusFudmaHomeHeaderHeading" >
+                <h2 class="enactusFudmaHomeHeaderHeadingMain"><span class="colorPrimary">E</span>nactus <span class="colorPrimary">F</span>ederal <span class="colorPrimary">U</span>niversity <span class="colorPrimary">D</span>utsinma </h2>
+                <h2 class="enactusFudmaHomeHeaderHeadingMobile"><span class="colorPrimary">E</span>nactus <span class="colorPrimary">F</span>udma </h2>
+                
+            </div>
+            <div class="btnEnactusFudmaHome" ><a href="{% url 'join' %}" class="btnEnactusFudmaHomeLink btnPrimary">Join Us</a></div>   
+        </div>
+    </div>
+   <div class="homeSdgContainer" >
+        <img class="homeSdgmarkIcon" src="{% static 'images/sdgmark.png' %}" alt="sdg image"/>
+        <h1 class="homeSdgHeading" >The world needs us.</h1>
+        <img class="homeSdgEmblemIcon" src="{% static 'images/sdgemblem.png' %}" alt="sdg image"/>
+        <div class="homeSdgIconsContainer" >
+            <a href="{% url 'sdg1' %}" ><img class="homeSdgIconsContainerIcons" src="{% static 'images/E-WEB-Goal-01.png' %}" alt="sdg image"/></a>
+            <a href="{% url 'sdg2' %}" ><img class="homeSdgIconsContainerIcons" src="{% static 'images/E-WEB-Goal-02.png' %}" alt="sdg image"/></a>
+            <a href="{% url 'sdg3' %}" ><img class="homeSdgIconsContainerIcons" src="{% static 'images/E-WEB-Goal-03.png' %}" alt="sdg image"/></a>
+            <a href="{% url 'sdg4' %}" ><img class="homeSdgIconsContainerIcons" src="{% static 'images/E-WEB-Goal-04.png' %}" alt="sdg image"/></a>
+            <a href="{% url 'sdg5' %}" ><img class="homeSdgIconsContainerIcons" src="{% static 'images/E-WEB-Goal-05.png' %}" alt="sdg image"/></a>
+            <a href="{% url 'sdg6' %}" ><img class="homeSdgIconsContainerIcons" src="{% static 'images/E-WEB-Goal-06.png' %}" alt="sdg image"/></a>
+            <a href="{% url 'sdg7' %}" ><img class="homeSdgIconsContainerIcons" src="{% static 'images/E-WEB-Goal-07.png' %}" alt="sdg image"/></a>
+            <a href="{% url 'sdg8' %}" ><img class="homeSdgIconsContainerIcons" src="{% static 'images/E-WEB-Goal-08.png' %}" alt="sdg image"/></a>
+            <a href="{% url 'sdg9' %}" ><img class="homeSdgIconsContainerIcons" src="{% static 'images/E-WEB-Goal-09.png' %}" alt="sdg image"/></a>
+            <a href="{% url 'sdg10' %}" ><img class="homeSdgIconsContainerIcons" src="{% static 'images/E-WEB-Goal-10.png' %}" alt="sdg image"/></a>
+            <a href="{% url 'sdg11' %}" ><img class="homeSdgIconsContainerIcons" src="{% static 'images/E-WEB-Goal-11.png' %}" alt="sdg image"/></a>
+            <a href="{% url 'sdg12' %}" ><img class="homeSdgIconsContainerIcons" src="{% static 'images/E-WEB-Goal-12.png' %}" alt="sdg image"/></a>
+            <a href="{% url 'sdg13' %}" ><img class="homeSdgIconsContainerIcons" src="{% static 'images/E-WEB-Goal-13.png' %}" alt="sdg image"/></a>
+            <a href="{% url 'sdg14' %}" ><img class="homeSdgIconsContainerIcons" src="{% static 'images/E-WEB-Goal-14.png' %}" alt="sdg image"/></a>
+            <a href="{% url 'sdg15' %}" ><img class="homeSdgIconsContainerIcons" src="{% static 'images/E-WEB-Goal-15.png' %}" alt="sdg image"/></a>
+            <a href="{% url 'sdg16' %}" ><img class="homeSdgIconsContainerIcons" src="{% static 'images/E-WEB-Goal-16.png' %}" alt="sdg image"/></a>
+            <a href="{% url 'sdg17' %}" ><img class="homeSdgIconsContainerIcons" src="{% static 'images/E-WEB-Goal-17.png' %}" alt="sdg image"/></a>
+            <img class="homeSdgIconsContainerIcons" src="{% static 'images/global-goals.png' %}" alt="sdg image"/>
+        </div>
+    </div>
+
+    <div class="homeTakeActionContainer" >
+        <h2 class="homeTakeActionContainerHeading" >Take Action</h2>
+        <div class="homeTakeAction">
+            <div class="homeTakeActionContent">
+                <img class="homeTakeActionContentIcons" src="{% static 'images/gear-icon.png' %}" alt="sdg image"/>
+                <h1 class=" homeTakeActionContentHeading colorPrimary">Share your story</h1>
+                <p class="homeTakeActionContentMessage" >Join the conversion about the <br>#GlobalGoals on social media and tag <br/> @EnactusFudma</p>
+            </div>
+            <div class="homeTakeActionContent homeTakeActionContentExplore">
+                <img class="homeTakeActionContentIcons" src="{% static 'images/network-icon.png' %}" alt="sdg image"/>
+                <h1 class=" homeTakeActionContentHeading colorPrimary">Explore more</h1>
+                <p class="homeTakeActionContentMessage" >Learn about other Enactus projects and the <br/> progress they are making towards the 17 SDGs <br/>by visiting Enactus Nigeria</p>
+                <a href="#" class=" btnHomeEnactusNigeriaLink btnPrimary ">Click here </a>
+            </div>
+            <div class="homeTakeActionContent">
+                <img class="homeTakeActionContentIcons" src="{% static 'images/handshake-icon.png' %}" alt="sdg image"/>
+                <h1 class=" homeTakeActionContentHeading colorPrimary">Donate</h1>
+                <p class="homeTakeActionContentMessage" >Your donation directly impacts our students' <br/> ability to advance the 17 SDGs through <br/> entrepreneurial action</p>
+                <a href="#" class=" btnHomeDonateLink btnPrimary">Donate</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="homeTeamWorkAndWorkAloneContainer">
+            <div class="homeWorkAloneContainer">
+                <h1 class="homeWorkAloneContainerHeading" >Do you work alone? 
+                    <span>
+                        <i class="fas fa-angle-double-right arrowRightDesktopView colorPrimary"></i>                       
+                        <i class="fas fa-angle-double-down arrowDownMobileView colorPrimary"></i>
+                        <i class="fas fa-angle-double-down arrowDownMobileView colorPrimary"></i>
+                        <i class="fas fa-angle-double-down arrowDownMobileView colorPrimary"></i>
+                    </span>
+                </h1>
+                <img class="homeWorkAloneContainerImage" src="{% static 'images/workalone.png' %}" alt="sdg image"/>
+                <h1 class="homeWorkAloneContainerEnactusHeading" >At Enactus, we beleive in teamwork
+                    <span>
+                        <i class="fas fa-angle-double-right colorPrimary"></i>
+                        <i class="fas fa-angle-double-right colorPrimary"></i>
+                    </span>
+                </h1>
+                
+            </div>
+            <div class="homeArrowContainer">
+                <h1>
+                    <span>
+                        <i class="fas fa-angle-double-right homeWorkAloneContainerArrowDouble arrowRightDesktopView"></i>
+                        <i class="fas fa-angle-double-right homeWorkAloneContainerArrowDouble arrowRightDesktopView"></i>
+                        <i class="fas fa-angle-double-right homeWorkAloneContainerArrowDouble arrowRightDesktopView"></i>
+                    </span>
+                </h1>
+                <i class="fas fa-arrow-down homeArrowContainerArrowDown"></i>
+                <h1 class="homeArrowContainerHeading" >none of us is as intelligent as all of us</h1>
+                <img class="homeArrowContainerImage" src="{% static 'images/teamwork.jpg' %}" alt="sdg image"/>
+            </div>
+            <div class="homeTeamWorkContainer" >
+                <h1>together we all win. teamwork is key</h1>
+                <img class="homeTeamWorkContainerImage" src="{% static 'images/togetrh2.jpg' %}" alt="sdg image"/>
+            </div>            
+        </div>
+        <div class="enactusSloganHome">
+            <img class="enactusSloganHomeLogo" src="{% static 'images/enactuslogo.png' %}" alt="enactus logo"/>
+            <h1 class="enactusSloganHomeContent" > <span><i class="fas fa-angle-double-right colorPrimary"></i></span> Seeing Possibilities</h1>
+            <h1 class="enactusSloganHomeContent"> <span><i class="fas fa-angle-double-right colorPrimary"></i></span> Taking Action</h1>
+            <h1 class="enactusSloganHomeContent"> <span><i class="fas fa-angle-double-right colorPrimary"></i></span> Enabling Progress</h1>
+        </div>
+    </div>
+    <div class="content">
+        Do something here
+    </div>
+    <div class="homeConnectWithUS">
+        <div class="homeConnectWithUSContainer">
+            <div>
+                <img class="homeConnectWithUSContainerFollowUsImage" src="{% static 'images/followus.jpg' %}" alt="sdg image"/>
+            </div>
+            <div>
+                <img class="homeConnectWithUSContainerConnectImage" src="{% static 'images/connect1.jpg' %}" alt="sdg image"/>
+                <br/>
+                <i class="fab fa-facebook-f homeConnectWithUSContainerSocialIcons"><a href="#"></a></i>
+                <i class="fab fa-twitter homeConnectWithUSContainerSocialIcons"><a href="#"></a></i>
+                <i class="fab fa-instagram homeConnectWithUSContainerSocialIcons "><a href="#"></a></i>
+                <i class="fab fa-youtube homeConnectWithUSContainerSocialIcons"><a href="#"></a></i>
+            </div>
+        </div>    
+        <h1 class="homeConnectWithUSEnactusFudma" >En<span class="colorPrimary">act</span>us Fe<span class="colorPrimary">d</span>eral Uni<span class="colorPrimary">v</span>er<span class="colorPrimary">s</span>ity Dut<span class="colorPrimary">s</span>in<span class="colorPrimary">m</span>a 
+            <span> @<span class="colorPrimary">e</span>n<span class="colorPrimary">a</span>c<span class="colorPrimary">t</span>us<span class="colorPrimary">f</span>ud<span class="colorPrimary">m</span>a</span>
+        </h1>
+    </div>
+</div>
+{% endblock content %}
+

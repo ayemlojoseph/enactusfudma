@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="description" content="This is Ayemlo Joseph's Website" />
+        <meta name="author" content="Ayemlo" />
+        <meta name="keywords" content="tutorials, gym, bodybuilding" />
+        <meta name="viewport" content="width=device-width, initial-scal=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href=" {% static 'css/style.css' %}?version=1" />
+
+        <link rel="shortcut icon" type="image/x-icon" href="" />
+        <title>enactus</title>
+    </head>
+    <body>
+        {% include 'includes/header.html' %} 
+        {% block content %} {% endblock content %}
+        <!-- This will allow you to exlude the footer from login and register page -->
+        {% block footer %} 
+            {% include 'includes/footer.html' %} 
+        {% endblock footer %}
+
+    </body>
+</html>

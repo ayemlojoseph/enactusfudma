@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="registerContainer">
+    <div class="registerContainerForm">
+        <form action="#" method="POST" class="registerForm">
+            {% csrf_token %}
+            <div class="registerFormHeadingContainer" ><h3 class="registerFormHeading">Already a Member?<br> Register Below to create account</h3></div>
+            <div class="registerFormGroup">  
+                <input type="email" class="registerFormInput" autocomplete="off" required="required" name="email" id="email" placeholder="Enter Email">
+                <label for="email" class="registerFormLabel">Enter Email</label>         
+                <input type="password" name="password" autocomplete="off" class="registerFormInput " id="password" placeholder="Enter Password" >
+                <label for="password" class="registerFormLabel"> Enter Password</label> 
+                <input type="password" name="passwordConfirm" autocomplete="off" class="registerFormInput " id="passwordConfirm" placeholder="Confirm Password" >
+                <label for="passwordConfirm" class="registerFormLabel"> Confirm Password</label> 
+                <input type="text" name="regCode" autocomplete="off" class="registerFormInput " id="regCode" placeholder="Enter Reg Code" >
+                <label for="regCode" class="registerFormLabel"> Reg Code</label> 
+            </div>                   
+           <div class="registerFormMessageContainer">
+                {% for message in messages %}
+                <p>{{message}}</p>
+                {% endfor %}
+           </div>
+           <div class="registerFormLinksContainer"> 
+                <h4>Not a member? <span><a href="{% url 'join' %}">click to join</a></span></h4>
+                <h4>Already have an account? <span><a href="{% url 'signin' %}">click to login</a></span></h4>
+            </div>
+
+            <input type="submit" class=" btnRegisterForm btnPrimary"  value="Register " name="submit"/>
+        </form>
+    </div>
+</div>
+
+<!-- Exlcuding footer -->
+{% block footer %} 
+{% endblock footer %}
+
+{% endblock content %}

@@ -1,0 +1,1208 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  color: black;
+  background-color: white; }
+
+.loginFormHeadingContainer {
+  padding-top: 3rem;
+  width: 50%; }
+
+.loginFormHeading {
+  text-align: center;
+  text-transform: uppercase; }
+
+.loginFormMessageContainer {
+  color: red;
+  margin-left: 2rem; }
+
+.loginFormLinksContainer {
+  margin-left: 2rem; }
+
+.registerFormHeadingContainer {
+  padding-top: 2rem;
+  width: 50%; }
+
+.registerFormHeading {
+  text-align: center;
+  font-size: 1.6rem; }
+
+.registerFormLinksContainer {
+  margin-left: 2rem; }
+
+.registerFormMessageContainer {
+  color: red;
+  margin-left: 2rem; }
+
+.joinEnactusFormHeadingMessage {
+  text-align: center;
+  margin: 1rem 0 0.5rem 0; }
+
+.joinEnactusFormSubmitMessage {
+  margin-left: 2rem; }
+
+.enactusAlumniFormSubmitMessage {
+  margin-left: 2rem; }
+
+.enactusAlumniFormHeadingMessage {
+  text-align: center;
+  margin: 1rem 0 0.5rem 0; }
+
+.whatIsEnactus {
+  background-color: black;
+  color: white;
+  margin-top: 2rem; }
+
+.headerContainerSecondary {
+  margin-top: 6rem;
+  padding: 0.6rem;
+  background-color: var(--colorPrimary);
+  text-align: center;
+  color: black; }
+  .headerContainerSecondaryJoinUsLink {
+    text-decoration: none;
+    color: black; }
+
+nav {
+  background-color: black;
+  display: flex;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000000000; }
+
+.enactusLogo {
+  width: 7rem;
+  height: 4rem;
+  margin-left: 1rem;
+  padding: 0.3rem; }
+
+.navList {
+  display: flex; }
+  .navListItem:first-child {
+    margin-left: 3rem; }
+  .navListItem {
+    list-style: none;
+    padding: 1.2rem; }
+  .navListLink {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Roboto';
+    font-weight: 700;
+    padding: 1.2rem; }
+    .navListLink:hover {
+      color: black;
+      background-color: var(--colorPrimary); }
+
+.hamburger div {
+  width: 25px;
+  background-color: white;
+  height: 3px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease; }
+
+.hamburger {
+  display: none; }
+
+.toggleBurger .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px); }
+
+.toggleBurger .line2 {
+  opacity: 0; }
+
+.toggleBurger .line3 {
+  transform: rotate(45deg) translate(-5px, -6px); }
+
+@media screen and (max-width: 900px) {
+  body {
+    overflow-x: hidden; }
+  .nav {
+    align-items: center;
+    justify-content: space-between; }
+  .navList {
+    position: absolute;
+    height: 92vh;
+    background-color: black;
+    top: 8vh;
+    right: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 0.5s ease-out; }
+    .navListItem:first-child {
+      margin-left: 0; }
+  .navList li {
+    opacity: 0; }
+  .hamburger {
+    display: block;
+    margin-right: 2rem; }
+  .navActive {
+    transform: translateX(0%); } }
+
+.footerContainer {
+  color: white;
+  background-color: black;
+  padding-bottom: 1rem; }
+  .footerContainerCopyright {
+    text-align: center;
+    background-color: black;
+    margin-top: 3rem; }
+
+.footerContentContainer {
+  padding: 5rem 4rem 0 4rem;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  text-align: center; }
+
+.footerContentHeading {
+  font-size: 2rem; }
+
+.footerContentText {
+  font-size: 1.2rem; }
+
+.footerSocialIcons {
+  font-size: 2rem;
+  padding: 1rem; }
+  .footerSocialIcons:hover {
+    background-color: var(--colorPrimary);
+    color: black; }
+
+@media screen and (max-width: 1200px) {
+  .footerContentContainer {
+    padding: 5rem 2rem 0 2rem; }
+  .footerContentHeading {
+    font-size: 1.4rem; }
+  .footerContentText {
+    font-size: 1rem; }
+  .footerSocialIcons {
+    font-size: 1.5rem;
+    padding: 0.5rem; }
+  .footerCopyright {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 900px) {
+  .footerContentContainer {
+    display: grid;
+    grid-template-columns: 50% 50%; }
+  .footerContentText {
+    font-size: 1rem;
+    margin-bottom: 2rem; }
+  .footerSocialIcons {
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem; } }
+
+@media screen and (max-width: 600px) {
+  .footerContentContainer {
+    display: block; } }
+
+.btnPrimary {
+  text-transform: uppercase;
+  background-color: var(--colorPrimary);
+  text-decoration: none;
+  color: black;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  transition: all 1s ease-in-out;
+  font-family: 'Roboto'; }
+  .btnPrimary:hover {
+    background-color: black;
+    color: var(--colorPrimary);
+    transform: translateY(8px); }
+
+.btnEnactusFudmaHome {
+  text-align: center;
+  margin-top: 2rem; }
+  .btnEnactusFudmaHomeLink {
+    padding: 1rem 1.2rem 1rem 1.2rem; }
+
+.btnRegisterForm {
+  padding: 1rem 1.2rem 1rem 1.2rem;
+  margin-left: 20rem; }
+
+.btnLoginForm {
+  padding: 1rem 1.2rem 1rem 1.2rem;
+  margin-left: 20rem; }
+
+.btnHomeEnactusNigeriaLink {
+  padding: 0.6rem 5rem 0.6rem 5rem; }
+
+.btnHomeDonateLink {
+  padding: 0.6rem 6rem 0.6rem 6rem; }
+
+.btnjoinus {
+  padding: 1rem 1.2rem 1rem 1.2rem; }
+
+.btnAlumni {
+  padding: 1rem 1.2rem 1rem 1.2rem; }
+
+/* Register Form*/
+.registerContainer {
+  padding: 2rem 0 3.2rem 0;
+  background-color: black; }
+  .registerContainerForm {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 187, 0, 0.356) 50%), url("../images/enact12.JPG");
+    background-size: cover;
+    height: 37rem;
+    max-width: 75rem;
+    margin: 0 auto; }
+
+.registerFormGroup {
+  width: 50%;
+  margin-left: 2rem; }
+
+.registerFormInput:not(:last-child) {
+  margin-bottom: -2rem; }
+
+.registerFormInput {
+  font-size: 1.2rem;
+  font-family: inherit;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  margin-top: 1rem;
+  border-bottom: 3px solid rgba(0, 128, 0, 0);
+  width: 80%;
+  display: block;
+  color: black;
+  transition: all 0.1s; }
+  .registerFormInput:focus {
+    outline: none;
+    border-bottom: 3px solid green;
+    box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.4); }
+  .registerFormInput:focus:invalid {
+    border-bottom: 3px solid red; }
+
+.registerFormLabel {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2.2rem;
+  margin-top: 2rem;
+  display: block;
+  transition: all 0.1s; }
+
+.registerFormInput:placeholder-shown + .registerFormLabel {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4.5rem); }
+
+/* Login form*/
+.loginContainer {
+  padding: 3rem 0 3rem 0; }
+  .loginContainerForm {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 187, 0, 0.404) 50%), url("../images/enact1.jpg");
+    background-size: cover;
+    height: 35rem;
+    max-width: 70rem;
+    margin: 0 auto; }
+
+.loginFormGroup {
+  width: 50%;
+  margin-left: 2rem; }
+
+.loginFormInput {
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  margin-top: 2rem;
+  border-bottom: 3px solid rgba(0, 128, 0, 0);
+  width: 80%;
+  display: block;
+  color: black;
+  transition: all 0.1s; }
+  .loginFormInput:focus {
+    outline: none;
+    border-bottom: 3px solid green;
+    box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.4); }
+  .loginFormInput:focus:invalid {
+    border-bottom: 3px solid red; }
+
+.loginFormLabel {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.1s; }
+
+.loginFormInput:placeholder-shown + .loginFormLabel {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4.5rem); }
+
+/* Join Us Form*/
+.joinEnactus {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0.7) 50%), url("../images/enact3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 25rem;
+  max-width: 100rem;
+  margin: 0 auto; }
+  .joinEnactusForm {
+    width: 100%;
+    padding-left: 2rem;
+    padding-top: 1rem; }
+
+.formJoinGroup {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+
+.formJoinInput {
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  margin-top: 0.3rem;
+  border-bottom: 3px solid rgba(0, 128, 0, 0);
+  width: 90%;
+  display: block;
+  color: black;
+  transition: all 0.1s; }
+  .formJoinInput:focus {
+    outline: none;
+    border-bottom: 3px solid green;
+    box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.4); }
+  .formJoinInput:focus:invalid {
+    border-bottom: 3px solid red; }
+
+.formJoinLabel {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.1s; }
+
+.formJoinInput:placeholder-shown + .formJoinLabel {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4.5rem); }
+
+/* Alumni Form*/
+.enactusAlumni {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0.7) 50%), url("../images/enact3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 25rem;
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-bottom: 2rem; }
+  .enactusAlumniForm {
+    width: 100%;
+    padding-left: 2rem;
+    padding-top: 1rem; }
+
+.formAlumniGroup {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+
+.formAlumniInput {
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  margin-top: 0.3rem;
+  border-bottom: 3px solid rgba(0, 128, 0, 0);
+  width: 90%;
+  display: block;
+  color: black;
+  transition: all 0.1s; }
+  .formAlumniInput:focus {
+    outline: none;
+    border-bottom: 3px solid green;
+    box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.4); }
+  .formAlumniInput:focus:invalid {
+    border-bottom: 3px solid red; }
+
+.formAlumniLabel {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.1s; }
+
+.formAlumniInput:placeholder-shown + .formAlumniLabel {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4.5rem); }
+
+@media screen and (max-width: 1200px) {
+  .loginContainerForm {
+    height: 30rem;
+    max-width: 50rem; } }
+
+@media screen and (max-width: 900px) {
+  .loginContainerForm {
+    height: 30rem;
+    width: 100%; } }
+
+@media screen and (max-width: 600px) {
+  .loginContainerForm {
+    height: 30rem;
+    width: 100%; } }
+
+.home {
+  height: 100vh;
+  overflow: hidden;
+  position: relative; }
+
+.home .slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  display: none;
+  animation: slide 2s ease; }
+
+.home .slide.active {
+  display: flex; }
+
+.container {
+  max-width: 1170px;
+  margin: auto; }
+
+.home .container {
+  flex-grow: 1; }
+
+.home .caption {
+  width: 50%; }
+
+.home .caption h1 {
+  font-size: 30px;
+  color: white;
+  margin: 0;
+  background-color: black;
+  display: inline; }
+
+.home .caption p {
+  font-size: 16px;
+  color: white;
+  display: inline;
+  background-color: black; }
+
+.home .caption a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--colorPrimary);
+  color: black;
+  padding: 10px 30px; }
+
+.home .controls .prev,
+.home .controls .next {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  color: gray;
+  background-color: rgba(0, 0, 0, 0.459);
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease; }
+
+.home .controls .prev:hover,
+.home .controls .next:hover {
+  background-color: #fec222;
+  color: black; }
+
+.home .controls .prev {
+  left: 0; }
+
+.home .controls .next {
+  right: 0; }
+
+.home .indicator {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  z-index: 2;
+  transform: translateY(-50%); }
+
+.home .indicator div {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  margin: 0 3px; }
+
+.home .indicator div.active {
+  background-color: #fec222; }
+
+.card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3rem; }
+
+.cardContainer {
+  background-color: var(--colorPrimary);
+  width: 33rem;
+  height: 38rem;
+  box-shadow: 0 1rem 2rem black;
+  overflow: hidden;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+  margin: 0 auto;
+  margin-bottom: 5rem; }
+  .cardContainer:hover {
+    transform: scale(1.05); }
+
+.cardBody {
+  height: 95%;
+  width: 100%;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 1.5%, 99% 85%, 0 120%); }
+  .cardBodyImageTextContainer {
+    height: 80%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-right: 1rem; }
+    .cardBodyImageTextContainerImageContainer {
+      overflow: hidden;
+      border-radius: 1rem;
+      margin-right: 1rem; }
+      .cardBodyImageTextContainerImageContainerImage {
+        height: 100%;
+        width: 100%; }
+    .cardBodyImageTextContainerText {
+      height: 100%;
+      width: 100%; }
+      .cardBodyImageTextContainerTextStudentDetails {
+        font-size: 1rem;
+        margin: 1rem 0 0 0;
+        padding-bottom: 1rem; }
+        .cardBodyImageTextContainerTextStudentDetails:not(:last-child) {
+          border-bottom: 1px solid gray; }
+
+.cardEnactusLogo {
+  width: 7rem;
+  height: 3.6rem;
+  animation: moveInRight 6s;
+  animation-iteration-count: infinite; }
+
+@media screen and (max-width: 1200px) {
+  .card {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3rem; }
+  .cardContainer {
+    background-color: var(--colorPrimary);
+    width: 33rem;
+    height: 38rem;
+    margin: 0 auto;
+    margin-bottom: 3rem; } }
+
+@media screen and (max-width: 900px) {
+  .card {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3rem; }
+  .cardContainer {
+    background-color: var(--colorPrimary);
+    width: 33rem;
+    height: 38rem;
+    margin: 0 auto;
+    margin-bottom: 3rem; } }
+
+@media screen and (max-width: 600px) {
+  .card {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3rem; }
+  .cardContainer {
+    background-color: var(--colorPrimary);
+    width: 28rem;
+    height: 30rem;
+    margin: 0 auto;
+    margin-bottom: 3rem; } }
+
+:root {
+  --colorPrimary: #fec222; }
+
+.colorPrimary {
+  color: var(--colorPrimary); }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translate(100px); }
+  80% {
+    transform: translate(20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes slide {
+  0% {
+    opacity: 1;
+    transform: scale(1.1); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px); }
+  to {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+.enactusFudmaHome {
+  background-image: linear-gradient(to right bottom, rgba(163, 204, 157, 0.123), rgba(18, 69, 10, 0.288)), url(../images/enact12.JPG);
+  height: 80vh;
+  background-size: cover;
+  background-position: center; }
+  .enactusFudmaHomeHeader {
+    padding-top: 23rem; }
+    .enactusFudmaHomeHeaderHeading {
+      text-transform: uppercase;
+      text-align: center;
+      color: whitesmoke;
+      font-size: 1.5rem; }
+      .enactusFudmaHomeHeaderHeadingMobile {
+        display: none; }
+
+.homeSdgContainer {
+  margin-top: 2rem;
+  color: black;
+  text-align: center; }
+
+.homeSdgHeading {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.5rem; }
+
+.homeSdgmarkIcon {
+  margin-bottom: 0.4rem;
+  height: 8rem; }
+
+.homeSdgEmblemIcon {
+  height: 6rem;
+  width: 50rem; }
+
+.homeSdgIconsContainer {
+  display: grid;
+  grid-template-columns: 16% 16% 16% 16% 16% 16%;
+  margin: 0 auto;
+  max-width: 64rem;
+  margin-bottom: 0.4rem; }
+  .homeSdgIconsContainerIcons {
+    height: 10rem;
+    margin-bottom: 0.2rem;
+    transition: all 0.7s ease-in-out; }
+    .homeSdgIconsContainerIcons:hover {
+      transform: scale(1.1); }
+  .homeSdgIconsContainer:hover .homeSdgIconsContainerIcons:not(:hover) {
+    transform: scale(0.92); }
+
+.homeTakeActionContainer {
+  background-image: linear-gradient(to right bottom, rgba(157, 197, 204, 0.856), rgba(10, 69, 49, 0.753)), url(../images/IMG_8268.JPG);
+  height: 95vh;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 2rem; }
+  .homeTakeActionContainerHeading {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-family: 'Roboto';
+    font-size: 3rem;
+    margin: 2rem 0 2rem 0; }
+
+.homeTakeAction {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin: 0 2rem 0 2rem; }
+  .homeTakeActionContentIcons {
+    transition: all 0.3s ease-in-out; }
+    .homeTakeActionContentIcons:hover {
+      transform: scale(1.1); }
+  .homeTakeActionContentHeading {
+    text-transform: uppercase; }
+  .homeTakeActionContentMessage {
+    margin-bottom: 2rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem; }
+
+.homeTeamWorkAndWorkAloneContainer {
+  padding-top: 4rem;
+  color: black;
+  display: grid;
+  grid-template-columns: 40% 20% 40%; }
+
+.homeWorkAloneContainer {
+  margin-left: 3rem; }
+  .homeWorkAloneContainerHeading {
+    text-transform: uppercase;
+    color: black; }
+  .homeWorkAloneContainerImage {
+    height: 20rem; }
+  .homeWorkAloneContainerEnactusHeading {
+    color: black; }
+
+.arrowDownMobileView {
+  color: transparent; }
+
+.homeTeamWorkContainer {
+  margin-left: 5rem; }
+  .homeTeamWorkContainerImage {
+    height: 27rem; }
+
+.homeArrowContainerArrowRight {
+  color: black;
+  font-size: 1rem;
+  width: 2rem; }
+
+.homeArrowContainerArrowDown {
+  color: var(--colorPrimary);
+  font-size: 5rem;
+  width: 12rem; }
+
+.homeArrowContainerImage {
+  height: 14rem;
+  margin-bottom: 2rem; }
+
+.homeArrowContainerHeading {
+  margin-bottom: 3rem; }
+
+.enactusSloganHome {
+  margin-left: 2rem; }
+  .enactusSloganHomeLogo {
+    width: 15rem; }
+  .enactusSloganHomeContent {
+    margin-left: 13rem; }
+
+.homeConnectWithUS {
+  margin: 6rem 0 3rem 4rem;
+  overflow-x: hidden; }
+  .homeConnectWithUSContainer {
+    display: grid;
+    grid-template-columns: 60% 40%; }
+    .homeConnectWithUSContainerFollowUsImage {
+      height: 30rem; }
+    .homeConnectWithUSContainerConnectImage {
+      height: 20rem;
+      margin-bottom: 4rem; }
+    .homeConnectWithUSContainerSocialIcons {
+      font-size: 3rem;
+      margin-right: 1rem;
+      padding: 1rem;
+      color: var(--colorPrimary);
+      background-color: black; }
+      .homeConnectWithUSContainerSocialIcons:hover {
+        color: black;
+        background-color: var(--colorPrimary); }
+  .homeConnectWithUSEnactusFudma {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Roboto' sans-serif;
+    margin-top: 1rem;
+    animation: moveInRight 7s;
+    animation-iteration-count: infinite; }
+
+.content {
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background-color: var(--colorPrimary);
+  color: black; }
+
+@media screen and (max-width: 1200px) {
+  .enactusFudmaHomeHeaderHeading {
+    font-size: 1.3rem; }
+  .homeSdgHeading {
+    font-size: 3rem; }
+  .homeSdgmarkIcon {
+    height: 6rem; }
+  .homeSdgEmblemIcon {
+    height: 4rem;
+    width: 40rem; }
+  .homeSdgIconsContainer {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    max-width: 42rem; }
+  .homeTakeActionContainer {
+    height: 100vh;
+    padding-top: 0.1rem; }
+    .homeTakeActionContainerHeading {
+      font-size: 1.8rem;
+      margin: 1rem 0 0.7rem 0; }
+  .homeTakeAction {
+    display: block; }
+    .homeTakeActionContentExplore {
+      margin-bottom: 2rem; }
+    .homeTakeActionContentIcons {
+      height: 6rem; }
+    .homeTakeActionContentHeading {
+      text-transform: uppercase;
+      font-size: 1.2rem; }
+    .homeTakeActionContentMessage {
+      margin-bottom: 1rem; }
+  .homeTeamWorkAndWorkAloneContainer {
+    padding-top: 4rem;
+    color: black;
+    display: grid;
+    grid-template-columns: 50% 50%; }
+  .homeWorkAloneContainer {
+    margin-left: 3rem; }
+    .homeWorkAloneContainerHeading {
+      text-transform: uppercase;
+      color: black; }
+    .homeWorkAloneContainerImage {
+      height: 20rem; }
+    .homeWorkAloneContainerEnactusHeading {
+      color: black; }
+  .arrowRightDesktopView {
+    color: transparent; }
+  .homeTeamWorkContainer {
+    margin-left: 5rem; }
+    .homeTeamWorkContainerImage {
+      height: 27rem; }
+  .homeArrowContainerArrowRight {
+    color: black;
+    font-size: 1rem;
+    width: 2rem; }
+  .homeArrowContainerArrowDown {
+    color: var(--colorPrimary);
+    font-size: 5rem;
+    width: 12rem; }
+  .homeArrowContainerImage {
+    height: 14rem;
+    margin-bottom: 2rem; }
+  .homeArrowContainerHeading {
+    margin-bottom: 3rem; }
+  .enactusSloganHome {
+    margin-left: 2rem; }
+    .enactusSloganHomeLogo {
+      width: 15rem; }
+    .enactusSloganHomeContent {
+      margin-left: 13rem; }
+  .homeConnectWithUSContainer {
+    display: grid;
+    grid-template-columns: 60% 40%; }
+    .homeConnectWithUSContainerFollowUsImage {
+      height: 23rem; }
+    .homeConnectWithUSContainerConnectImage {
+      height: 20rem;
+      margin-bottom: 4rem; }
+    .homeConnectWithUSContainerSocialIcons {
+      font-size: 2rem; }
+  .homeConnectWithUSEnactusFudma {
+    letter-spacing: 0.2rem; } }
+
+@media screen and (max-width: 900px) {
+  .homeTeamWorkAndWorkAloneContainer {
+    padding-top: 4rem;
+    color: black;
+    display: block; }
+  .homeWorkAloneContainerHeading {
+    text-transform: uppercase;
+    color: black; }
+  .homeWorkAloneContainerImage {
+    height: 20rem; }
+  .homeWorkAloneContainerEnactusHeading {
+    color: black; }
+  .homeTeamWorkContainer {
+    margin-left: 3rem; }
+    .homeTeamWorkContainerImage {
+      height: 25rem; }
+  .homeArrowContainerArrowRight {
+    color: black;
+    font-size: 1rem;
+    width: 2rem; }
+  .homeArrowContainerArrowDown {
+    color: var(--colorPrimary);
+    font-size: 5rem;
+    width: 12rem; }
+  .homeArrowContainerImage {
+    height: 14rem;
+    margin-bottom: 2rem; }
+  .homeArrowContainerHeading {
+    margin-bottom: 3rem; }
+  .arrowRightDesktopView {
+    color: transparent; }
+  .arrowDownMobileView {
+    color: var(--colorPrimary); }
+  .homeConnectWithUS {
+    text-align: center; }
+    .homeConnectWithUSContainer {
+      display: block; }
+      .homeConnectWithUSContainerFollowUsImage {
+        height: 23rem; }
+      .homeConnectWithUSContainerConnectImage {
+        height: 20rem;
+        margin-bottom: 0.1rem; }
+      .homeConnectWithUSContainerSocialIcons {
+        font-size: 2rem; }
+    .homeConnectWithUSEnactusFudma {
+      display: none; } }
+
+@media screen and (max-width: 600px) {
+  .enactusFudmaHome {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.966) 0%, transparent 30%, black 70%, transparent 80%, rgba(0, 0, 0, 0.973) 99%), url(../images/enact12.JPG);
+    height: 80vh;
+    background-position: right; }
+    .enactusFudmaHomeHeader {
+      padding-top: 23rem; }
+      .enactusFudmaHomeHeaderHeading {
+        text-transform: uppercase;
+        text-align: center;
+        color: whitesmoke;
+        font-size: 1.5rem; }
+        .enactusFudmaHomeHeaderHeadingMain {
+          display: none; }
+        .enactusFudmaHomeHeaderHeadingMobile {
+          display: block; }
+  .homeSdgHeading {
+    font-size: 2rem; }
+  .homeSdgmarkIcon {
+    height: 5rem; }
+  .homeSdgEmblemIcon {
+    width: 30rem; }
+  .homeSdgIconsContainer {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    max-width: 33rem;
+    overflow: hidden; }
+  .homeTakeActionContentExplore {
+    margin-bottom: 2rem; }
+  .homeTakeActionContentIcons {
+    height: 5rem; }
+  .homeTakeActionContentHeading {
+    text-transform: uppercase;
+    font-size: 1.2rem; }
+  .homeTakeActionContentMessage {
+    margin-bottom: 1rem;
+    font-size: 0.9rem; }
+  .homeWorkAloneContainerImage {
+    height: 20rem; }
+  .homeWorkAloneContainerEnactusHeading {
+    color: black; }
+  .homeTeamWorkContainer {
+    margin-left: 3rem; }
+    .homeTeamWorkContainerImage {
+      height: 25rem; }
+  .homeArrowContainerArrowRight {
+    color: black;
+    font-size: 1rem;
+    width: 2rem; }
+  .homeArrowContainerArrowDown {
+    color: var(--colorPrimary);
+    font-size: 5rem;
+    width: 12rem; }
+  .homeArrowContainerImage {
+    height: 14rem;
+    margin-bottom: 2rem; }
+  .homeArrowContainerHeading {
+    margin-bottom: 3rem; }
+  .arrowDownMobileView {
+    color: transparent; }
+  .homeConnectWithUSContainerFollowUsImage {
+    height: 18rem; } }
+
+.enactusFudmaAlumni {
+  background-image: linear-gradient(90deg, black 0%, black 25%, transparent 70%, black 99%), url(../images/IMG_2602.JPG);
+  height: 90vh;
+  background-size: cover;
+  background-position: right; }
+  .enactusFudmaAlumniHeadingContainer {
+    padding-top: 15rem;
+    margin-left: 5rem; }
+    .enactusFudmaAlumniHeadingContainerHeading {
+      text-transform: uppercase;
+      text-align: center;
+      color: whitesmoke;
+      font-size: 2.2rem;
+      text-align: justify;
+      letter-spacing: 0.2rem; }
+    .enactusFudmaAlumniHeadingContainerIcon {
+      margin-top: 2rem;
+      margin-left: 10rem;
+      font-size: 4rem;
+      color: var(--colorPrimary); }
+
+@media screen and (max-width: 900px) {
+  .enactusFudmaAlumni {
+    background-image: radial-gradient(black, rgba(0, 0, 0, 0.767), rgba(238, 236, 228, 0.253), rgba(238, 236, 228, 0.253)), url(../images/IMG_2602.JPG); }
+    .enactusFudmaAlumniHeadingContainer {
+      padding-top: 20rem;
+      margin-left: 0;
+      text-align: center; }
+      .enactusFudmaAlumniHeadingContainerHeading {
+        font-size: 2.2rem;
+        text-align: center; }
+      .enactusFudmaAlumniHeadingContainerIcon {
+        margin-left: 0; } }
+
+.enactusFudmaStudent {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.966) 0%, transparent 50%, transparent 60%, rgba(0, 0, 0, 0.973) 99%), url(../images/FullSizeRender-24.jpg);
+  height: 90vh;
+  background-size: cover;
+  background-position: right; }
+  .enactusFudmaStudentHeadingContainer {
+    padding-top: 15rem;
+    margin-left: 70rem; }
+    .enactusFudmaStudentHeadingContainerHeading {
+      text-transform: uppercase;
+      text-align: center;
+      color: whitesmoke;
+      font-size: 2.2rem;
+      text-align: justify;
+      letter-spacing: 0.2rem; }
+  .enactusFudmaStudentIcon {
+    margin-top: 2rem;
+    margin-left: 80rem;
+    font-size: 4rem;
+    color: var(--colorPrimary); }
+
+.joinUs {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+  .joinUsGallery {
+    text-align: center; }
+    .joinUsGalleryHeading {
+      text-transform: uppercase;
+      color: black;
+      margin-bottom: 1rem; }
+    .joinUsGalleryImageContainer {
+      display: grid;
+      grid-template-columns: 50% 50%; }
+      .joinUsGalleryImageContainerImage {
+        width: 23rem;
+        height: 17rem;
+        object-fit: cover;
+        margin-bottom: 0.5rem;
+        border: 2px solid rgba(0, 0, 0, 0.048);
+        box-shadow: 0 1rem 1.3rem rgba(0, 0, 0, 0.3);
+        transition: all 0.7s ease-in-out; }
+        .joinUsGalleryImageContainerImage:hover {
+          transform: scale(1.1); }
+      .joinUsGalleryImageContainer:hover .joinUsGalleryImageContainerImage:not(:hover) {
+        transform: scale(0.9); }
+  .joinUsAboutEnactus {
+    margin-left: 2rem; }
+
+@media screen and (max-width: 1200px) {
+  .joinUs {
+    grid-template-columns: 60% 40%; }
+    .joinUsGalleryHeading {
+      font-size: 1rem; }
+    .joinUsGalleryImageContainer {
+      display: block; } }
+
+@media screen and (max-width: 900px) {
+  .joinUs {
+    display: block; }
+    .joinUsGalleryHeading {
+      font-size: 1.5rem; }
+    .joinUsGalleryImageContainerImage {
+      width: 30rem;
+      height: 17rem; } }
+
+@media screen and (max-width: 600px) {
+  .joinUsGalleryHeading {
+    font-size: 1.3rem; }
+  .joinUsGalleryImageContainerImage {
+    width: 25rem;
+    height: 15rem; } }
+
+.unSdgImageContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 2rem 4rem 2rem 4rem;
+  height: 10rem; }
+  .unSdgImageContainerIconsLeft {
+    height: 10rem;
+    margin-left: 4rem; }
+  .unSdgImageContainerIconsRight {
+    height: 10rem;
+    margin-left: 20rem; }
+
+.unSdg {
+  margin: 0 6rem 0 6rem; }
+  .unSdgHeading {
+    margin-left: 4rem; }
+  .unSdgEmblemContainer {
+    text-align: center; }
+    .unSdgEmblemContainerIcon {
+      height: 10rem;
+      width: 50rem;
+      margin-left: 4rem; }
+  .unSdgContents {
+    margin: 0 4rem 0 4rem;
+    text-align: justify; }
+  .unSdgImageContainer1 {
+    background-color: #E5243B; }
+  .unSdgImageContainer2 {
+    background-color: #DDA63A; }
+  .unSdgImageContainer3 {
+    background-color: #4C9F38; }
+  .unSdgImageContainer4 {
+    background-color: #C5192D; }
+  .unSdgImageContainer5 {
+    background-color: #FF3A21; }
+  .unSdgImageContainer6 {
+    background-color: #26BDE2; }
+  .unSdgImageContainer7 {
+    background-color: #FCC30B; }
+  .unSdgImageContainer8 {
+    background-color: #A21942; }
+  .unSdgImageContainer9 {
+    background-color: #FD6925; }
+  .unSdgImageContainer10 {
+    background-color: #DD1367; }
+  .unSdgImageContainer11 {
+    background-color: #FD9D24; }
+  .unSdgImageContainer12 {
+    background-color: #BF8B2E; }
+  .unSdgImageContainer13 {
+    background-color: #3F7E44; }
+  .unSdgImageContainer14 {
+    background-color: #0A97D9; }
+  .unSdgImageContainer15 {
+    background-color: #56C02B; }
+  .unSdgImageContainer16 {
+    background-color: #00689D; }
+  .unSdgImageContainer17 {
+    background-color: #19486A; }

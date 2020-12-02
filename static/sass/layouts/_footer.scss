@@ -1,0 +1,88 @@
+.footerContainer{
+    color: white;
+    background-color: black;
+    padding-bottom: 1rem;
+
+    &Copyright {
+      text-align: center;
+      background-color: black;
+      margin-top: 3rem;
+    }
+}
+.footerContentContainer {
+    padding: 5rem 4rem 0 4rem;      
+    background-color: black;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+}
+.footerContent{
+
+    &Heading{
+      font-size: 2rem;
+    }
+    &Text{
+      font-size: 1.2rem;
+    }
+}
+.footerSocialIcons{
+    font-size: 2rem;
+    padding: 1rem;
+
+    &:hover{
+        background-color: var(--colorPrimary);
+        color: black;
+    }
+}
+  
+//  Media Queries 
+// Tablet landscape
+@media screen and (max-width: 1200px){
+ 
+    .footerContentContainer {
+        padding: 5rem 2rem 0 2rem; 
+    }
+    .footerContent{
+
+      &Heading{
+          font-size: 1.4rem;
+      }
+      &Text{
+          font-size: 1rem;
+      }
+    }
+    .footerSocialIcons{
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+    .footerCopyright{
+        font-size: 1rem;
+    }
+    
+}
+//  Tablet portrait  
+ @media screen and (max-width: 900px){
+    .footerContentContainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .footerContent{
+
+        &Text{
+          font-size: 1rem;
+          margin-bottom: 2rem;
+        }
+    }
+    .footerSocialIcons{
+        font-size: 1.6rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+} 
+//  Phone 
+ @media screen and (max-width: 600px){
+    .footerContentContainer {
+      display: block;
+    }
+} 
+
